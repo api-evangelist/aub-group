@@ -1,0 +1,70 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+- https://www.aubgroup.com.au/wp-content/uploads/2026/04/AUB-Group-NZ-Limited-Privacy-Statement-NZ-1-May-2026.pdf
+discovered_from: https://www.aubgroup.com.au/ (footer links to both privacy PDFs; the dossier recorded no legal_pages)
+signals:
+  data_subject_request:
+    url: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+    section: Access and correction of Personal Information
+    channel: privacy@aubgroup.com.au (Privacy Officer)
+    rights_named: [access, correction]
+    evidence:
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You can request access to any Personal Information we hold about you at any time. However please be aware that from time to time we may need to reject your request to access Personal Information we hold about you, if we believe such rejection to be necessary and to the extent allowed by law.
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2026/04/AUB-Group-NZ-Limited-Privacy-Statement-NZ-1-May-2026.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      section: How can you access or update your personal information?
+      quote: You have rights under the Privacy Act 2020 to access, update, and correct your personal information held by us or by any of the third parties identified in this Privacy Statement.
+    note: Access and correction rights under the Australian Privacy Act (AU policy, June 2022) and the NZ Privacy Act 2020 (NZ statement, 1 May 2026). The AU policy reserves the right to refuse access and to charge a small fee; no response SLA, deletion or portability right is stated.
+  incident_notification:
+    url: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+    section: Data security
+    evidence:
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We have put in place procedures to deal with any suspected Personal Information breach and will notify you and any applicable regulator of a breach where we are legally required to do so.
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2026/04/AUB-Group-NZ-Limited-Privacy-Statement-NZ-1-May-2026.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      section: How do we store your personal information?
+      quote: Should we suffer a data breach that is likely to cause you serious harm, we will advise you as soon as practicable and report the breach to the Privacy Commissioner.
+    note: Breach notification to individuals and regulator is committed only where legally required (AU) or where serious harm is likely (NZ); no fixed notification window is stated.
+  data_residency:
+    url: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+    section: Who may we disclose your Personal Information to?
+    evidence:
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: AUB may transfer your Personal Information to New Zealand, Singapore, European Union and to other countries in which we do business.
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2026/04/AUB-Group-NZ-Limited-Privacy-Statement-NZ-1-May-2026.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      section: Overseas disclosures
+      quote: These overseas recipients may be located in Australia, the United Kingdom, the United States, Asia, Europe, or other jurisdictions where our insurance partners and service providers operate.
+    note: This is a disclosure of cross-border transfer, not a residency commitment. The NZ statement adds that where comparable safeguards cannot be established AUB will seek the individual's authorisation before disclosing overseas.
+  data_retention:
+    url: https://www.aubgroup.com.au/wp-content/uploads/2026/04/AUB-Group-NZ-Limited-Privacy-Statement-NZ-1-May-2026.pdf
+    section: Our retention of your personal information
+    evidence:
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2026/04/AUB-Group-NZ-Limited-Privacy-Statement-NZ-1-May-2026.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Following that period, we will make sure it is deleted or anonymised.
+    - source: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+      http_status: 200
+      fetched: '2026-10-21'
+      section: Information retention
+      quote: We are subject to legal and regulatory requirements in relation to the retention of information collected under this Privacy Policy.
+    note: The NZ statement ties retention to the relationship plus ongoing business need and internal retention policies, then deletion or anonymisation; the AU policy states no period and refers readers to the Privacy Officer or OAIC. Neither gives a concrete retention period.
+note: >-
+  Only two legal documents were found, both privacy PDFs linked from the aubgroup.com.au homepage. The
+  disclosure section lists categories of recipients (technology partners, service providers, insurers,
+  share registry) but no named subprocessor list, so `subprocessors` is not recorded. Nothing found on
+  AI transparency, accessibility conformance, SBOM, transparency reporting or Global Privacy Control.

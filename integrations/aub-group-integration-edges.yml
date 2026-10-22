@@ -1,0 +1,19 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/aub-group/integrations
+- https://n8n.io/integrations/aub-group/
+- https://composio.dev/toolkits/aub-group
+- https://monid.ai/tools/aub-group
+checked:
+- https://www.aubgroup.com.au/
+- https://zapier.com/apps/aub-group/integrations
+- https://www.aubgroup.com.au/partners/
+- https://composio.dev/toolkits/aub-group
+- https://monid.ai/tools/aub-group
+- https://n8n.io/integrations/aub-group/
+summary: AUB Group (insurance broking group) publishes no API, developer portal, integrations page or marketplace
+  listing that could be found; no integration edges recorded.
+marketplace_apps: []
+edges: []
+templates: []

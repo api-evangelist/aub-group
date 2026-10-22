@@ -1,23 +1,85 @@
 aid: aub-group
+
 name: AUB Group
-description: 'AUB Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'AUB Group Limited is an ASX200-listed group of insurance brokers and underwriting agencies operating
+  in roughly 450 locations across Australia and New Zealand, working with around 700,000 clients to place more than
+  $3.6bn in insurance premiums with local and foreign insurers. Its businesses include Australian broking, underwriting
+  agencies, New Zealand operations, BizCover and Tysers. No public developer API, developer portal or API documentation
+  was found on its corporate website (aubgroup.com.au). Surfaced via the API Evangelist harvest backlog (australia-apidays-2026).'
+
 url: https://raw.githubusercontent.com/api-evangelist/aub-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Insurance
+- Insurance Broking
+- Underwriting
+- Financial Services
+- Australia
+- New Zealand
+
+image: https://www.aubgroup.com.au/wp-content/themes/aubgroup/dist/images/aub-group-logo_e6a1dc33.svg
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/aub-group-hosts.yml
+- type: Newsroom
+  url: https://www.aubgroup.com.au/category/news
+- type: DomainSecurity
+  url: security/aub-group-domain-security.yml
 - type: Website
-  url: https://aubgroup.com.au/
+  url: https://www.aubgroup.com.au/
+- type: Blog
+  url: https://www.aubgroup.com.au/news-centre/
+- type: Support
+  url: https://www.aubgroup.com.au/contact-us/
+- type: PrivacyPolicy
+  url: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+- type: Careers
+  url: https://www.aubgroup.com.au/careers/
+- type: InvestorRelations
+  url: https://www.aubgroup.com.au/investor-centre/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/aub-group-limited
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Corporate site names AUB Group Limited (title and meta description); no developer portal, API docs, terms of service or GitHub organization linked from the site.
+  evidence:
+  - url: https://www.aubgroup.com.au/
+    status: 200
+  - url: https://www.aubgroup.com.au/news-centre/
+    status: 200
+  - url: https://www.aubgroup.com.au/contact-us/
+    status: 200
+  - url: https://www.aubgroup.com.au/wp-content/uploads/2022/07/AUB-Group-Limited-Privacy-Policy-June-2022.pdf
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic
